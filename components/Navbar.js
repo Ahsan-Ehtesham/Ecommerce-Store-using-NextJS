@@ -50,7 +50,7 @@ const Navbar = () => {
             </header>
             <div
                 ref={ref}
-                className="w-1/3 z-10 sideCart absolute top-0 right-0 bg-indigo-100 px-2 py-10 transform transition-transform translate-x-full"
+                className="sm:w-full md:w-2/3 lg:w-2/3 xl:w-1/3 z-10 sideCart absolute top-0 right-0 bg-indigo-100 px-2 py-10 transform transition-transform translate-x-full"
             >
                 <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
                 <span
@@ -81,11 +81,20 @@ const Navbar = () => {
                         </div>
                     </li>
                 </ul>
-                <button
-                    className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-700 rounded text-base mt-4 md:mt-0 cursor-pointer"
-                >
-                    <IoBagCheckOutline className="mr-2" /> Checkout
-                </button>
+                <div className="flex justify-end space-x-2">
+                    <button
+                        className="inline-flex items-center text-white bg-gradient-to-r from-red-500 to-pink-500 shadow-lg shadow-red-600/50 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-700 rounded text-base mt-4 md:mt-0 cursor-pointer"
+                    >
+                        Clear Cart
+                    </button>
+                    <button
+                        className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-700 rounded text-base mt-4 md:mt-0 cursor-pointer"
+                    >
+                        <IoBagCheckOutline className="mr-2" /> Checkout
+                    </button>
+
+                </div>
+
             </div>
         </div>
     );
