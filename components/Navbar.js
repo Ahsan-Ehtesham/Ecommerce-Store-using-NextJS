@@ -18,7 +18,7 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
   };
   const ref = useRef();
   return (
-    <div>
+    <div className="sticky top-0 z-10 bg-white">
       <header className="text-gray-600 body-font shadow-lg shadow-gray-600/50">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link href={"/"}>
@@ -43,7 +43,7 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
           </nav>
           <button
             onClick={toggleCart}
-            className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-700 rounded text-base mt-4 md:mt-0 cursor-pointer"
+            className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 cursor-pointer"
           >
             <GrCart className="mr-2" /> Cart
           </button>
@@ -51,9 +51,9 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
       </header>
       <div
         ref={ref}
-        className="sm:w-full md:w-2/3 lg:w-2/3 xl:w-1/3 z-10 sideCart absolute top-0 right-0 bg-indigo-100 px-2 py-10 transform transition-transform translate-x-full"
+        className={`w-full sm:w-1/3 md:w-2/3 lg:w-2/3 xl:w-1/3 sideCart absolute top-0 right-0 bg-indigo-100 px-2 py-10 transform transition-transform ${Object.keys(cart).length===0 ? 'translate-x-full' : 'translate-x-0'}`}
       >
-        <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
+        <h2 className="absolute top-4 left-4 font-bold text-xl">Shopping Cart</h2>
         <span
           onClick={toggleCart}
           className="absolute top-5 right-4 cursor-pointer text-xl"
@@ -68,12 +68,9 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
             return (
               <li key={k} className="bg-white rounded p-5 my-5">
                 <div className="flex">
-                  <img
-                    className="mr-3 rounded"
-                    width={50}
-                    height={50}
-                    src="https://m.media-amazon.com/images/I/61R0oSuKMLL._AC_UX569_.jpg"
-                  />
+                  <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200 mr-3">
+                      <img src="https://m.media-amazon.com/images/I/61R0oSuKMLL._AC_UX569_.jpg" alt="T-shirt black" class="h-full w-full object-contain object-center"/>
+                    </div>
                   <div className="w-3/5 flex items-center font-semibold">
                     {cart[k].name}
                   </div>
@@ -118,9 +115,9 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
           >
             Clear Cart
           </button>
-          <button className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-700 rounded text-base mt-4 md:mt-0 cursor-pointer">
+          <Link href={'/checkout'}><button className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-700 rounded text-base mt-4 md:mt-0 cursor-pointer">
             <IoBagCheckOutline className="mr-2" /> Checkout
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>
