@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { GrCart, GrClose } from "react-icons/gr";
-import { FaPlusCircle, FaMinusCircle } from "react-icons/fa";
+import { FaPlusCircle, FaMinusCircle, FaUserCircle } from "react-icons/fa";
 import { IoBagCheckOutline } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,19 +41,30 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
               Stickers
             </Link>
           </nav>
-          <button
-            onClick={toggleCart}
-            className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 cursor-pointer"
-          >
-            <GrCart className="mr-2" /> Cart
-          </button>
+          <div className="flex items-center">
+            <Link href={"/login"}>
+              <button className="mr-4">
+                <FaUserCircle className="text-xl" />
+              </button>
+            </Link>
+            <button
+              onClick={toggleCart}
+              className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 cursor-pointer"
+            >
+              <GrCart className="mr-2" /> Cart
+            </button>
+          </div>
         </div>
       </header>
       <div
         ref={ref}
-        className={`w-full sm:w-1/3 md:w-2/3 lg:w-2/3 xl:w-1/3 sideCart absolute top-0 right-0 bg-indigo-100 px-2 py-10 transform transition-transform ${Object.keys(cart).length===0 ? 'translate-x-full' : 'translate-x-0'}`}
+        className={`w-full sm:w-1/3 md:w-2/3 lg:w-2/3 xl:w-1/3 sideCart absolute top-0 right-0 bg-indigo-100 px-2 py-10 transform transition-transform ${
+          Object.keys(cart).length === 0 ? "translate-x-full" : "translate-x-0"
+        }`}
       >
-        <h2 className="absolute top-4 left-4 font-bold text-xl">Shopping Cart</h2>
+        <h2 className="absolute top-4 left-4 font-bold text-xl">
+          Shopping Cart
+        </h2>
         <span
           onClick={toggleCart}
           className="absolute top-5 right-4 cursor-pointer text-xl"
@@ -69,8 +80,12 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
               <li key={k} className="bg-white rounded p-5 my-5">
                 <div className="flex">
                   <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200 mr-3">
-                      <img src="https://m.media-amazon.com/images/I/61R0oSuKMLL._AC_UX569_.jpg" alt="T-shirt black" class="h-full w-full object-contain object-center"/>
-                    </div>
+                    <img
+                      src="https://m.media-amazon.com/images/I/61R0oSuKMLL._AC_UX569_.jpg"
+                      alt="T-shirt black"
+                      class="h-full w-full object-contain object-center"
+                    />
+                  </div>
                   <div className="w-3/5 flex items-center font-semibold">
                     {cart[k].name}
                   </div>
@@ -89,7 +104,8 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                       className="mr-2 cursor-pointer"
                     />{" "}
                     {cart[k].qty}{" "}
-                    <FaPlusCircle onClick={() =>
+                    <FaPlusCircle
+                      onClick={() =>
                         addToCart(
                           k,
                           1,
@@ -98,7 +114,9 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
                           cart[k].size,
                           cart[k].variant
                         )
-                      } className="ml-2 cursor-pointer" />
+                      }
+                      className="ml-2 cursor-pointer"
+                    />
                   </div>
                   <div className="w-1/5 flex items-center justify-end font-semibold">
                     ₨{cart[k].price}
@@ -115,9 +133,11 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
           >
             Clear Cart
           </button>
-          <Link href={'/checkout'}><button className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-700 rounded text-base mt-4 md:mt-0 cursor-pointer">
-            <IoBagCheckOutline className="mr-2" /> Checkout
-          </button></Link>
+          <Link href={"/checkout"}>
+            <button className="inline-flex items-center text-white bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg shadow-indigo-600/50 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-700 rounded text-base mt-4 md:mt-0 cursor-pointer">
+              <IoBagCheckOutline className="mr-2" /> Checkout
+            </button>
+          </Link>
         </div>
       </div>
     </div>
