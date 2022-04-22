@@ -183,15 +183,15 @@ const Checkout = ({ cart, subTotal }) => {
               </div>
               <div className="billing-info py-4">
                 <h1 className="text-xl font-bold mb-4">Billing Information</h1>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="default:ring-2 border w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                    className="default:ring-2 border w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                     type="checkbox"
                     value=""
                     id="flexCheckDefault"
                   />
                   <label
-                    class="form-check-label inline-block font-semibold text-gray-800"
+                    className="form-check-label inline-block font-semibold text-gray-800"
                     htmlFor="flexCheckDefault"
                   >
                     Same as Shipping Information
@@ -215,11 +215,11 @@ const Checkout = ({ cart, subTotal }) => {
                     return (
                       <li key={k} className="my-10">
                         <div className="flex">
-                          <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border bg-white border-gray-200 mr-3">
+                          <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border bg-white border-gray-200 mr-3">
                             <img
                               src="https://m.media-amazon.com/images/I/61R0oSuKMLL._AC_UX569_.jpg"
                               alt="T-shirt black"
-                              class="h-full w-full object-contain object-center"
+                              className="h-full w-full object-contain object-center"
                             />
                           </div>
                           <div className="w-3/5 flex font-semibold">

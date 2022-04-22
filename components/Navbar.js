@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
-  console.log(cart, addToCart, removeFromCart, clearCart, subTotal);
+  // console.log(cart, addToCart, removeFromCart, clearCart, subTotal);
   const toggleCart = () => {
     if (ref.current.classList.contains("translate-x-full")) {
       ref.current.classList.remove("translate-x-full");
@@ -79,11 +79,11 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
             return (
               <li key={k} className="bg-white rounded p-5 my-5">
                 <div className="flex">
-                  <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200 mr-3">
+                  <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200 mr-3">
                     <img
                       src="https://m.media-amazon.com/images/I/61R0oSuKMLL._AC_UX569_.jpg"
                       alt="T-shirt black"
-                      class="h-full w-full object-contain object-center"
+                      className="h-full w-full object-contain object-center"
                     />
                   </div>
                   <div className="w-3/5 flex items-center font-semibold">

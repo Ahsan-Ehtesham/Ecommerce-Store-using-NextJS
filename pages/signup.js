@@ -4,23 +4,23 @@ import Link from "next/link";
 const Signup = () => {
   return (
     <>
-      <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-md w-full space-y-8">
+      <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-md w-full space-y-8">
           <div>
             <img
-              class="mx-auto h-12 w-auto"
+              className="mx-auto h-12 w-auto"
               src="/logo.png"
               alt="Workflow"
             />
-            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
               Sign up for your account
             </h2>
-            <p class="mt-2 text-center text-sm text-gray-600">
+            <p className="mt-2 text-center text-sm text-gray-600">
               Or
               <Link href={"/login"}>
                 <a
                   href="/"
-                  class="font-medium text-blue-600 hover:text-blue-500"
+                  className="font-medium text-blue-600 hover:text-blue-500"
                 >
                   {" "}
                   log in to your account
@@ -28,11 +28,11 @@ const Signup = () => {
               </Link>
             </p>
           </div>
-          <form class="mt-8 space-y-6" action="#" method="POST">
+          <form className="mt-8 space-y-6" action="#" method="POST">
             <input type="hidden" name="remember" value="true" />
-            <div class="rounded-md shadow-sm -space-y-px">
+            <div className="rounded-md shadow-sm -space-y-px">
             <div>
-                <label for="full-name" class="sr-only">
+                <label for="full-name" className="sr-only">
                   Full Name
                 </label>
                 <input
@@ -40,12 +40,12 @@ const Signup = () => {
                   name="name"
                   type="text"
                   required
-                  class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                   placeholder="Full Name"
                 />
               </div>
               <div>
-                <label for="email-address" class="sr-only">
+                <label for="email-address" className="sr-only">
                   Email address
                 </label>
                 <input
@@ -54,12 +54,12 @@ const Signup = () => {
                   type="email"
                   autocomplete="email"
                   required
-                  class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                   placeholder="Email address"
                 />
               </div>
               <div>
-                <label for="password" class="sr-only">
+                <label for="password" className="sr-only">
                   Password
                 </label>
                 <input
@@ -68,7 +68,7 @@ const Signup = () => {
                   type="password"
                   autocomplete="current-password"
                   required
-                  class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                   placeholder="Password"
                 />
               </div>
@@ -77,11 +77,11 @@ const Signup = () => {
             <div>
               <button
                 type="submit"
-                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
-                {/* <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                {/* <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                   <svg
-                    class="h-5 w-5 text-blue-500 group-hover:text-blue-400"
+                    className="h-5 w-5 text-blue-500 group-hover:text-blue-400"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
