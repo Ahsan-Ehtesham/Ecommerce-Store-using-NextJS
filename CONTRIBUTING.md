@@ -1,7 +1,8 @@
 ## Preliminaries
-Download and install the latest stable version of Git 📥 for version control
-Create a Github Account 📇
+Download and install the latest stable version of Git 📥 for version control <br/>
+Create a Github Account 📇 <br/>
 Download and install latest stable version of VS Code
+
 ## A. Setting up the Project
 1. Fork this repository.
 
@@ -9,21 +10,26 @@ Download and install latest stable version of VS Code
 
 2. Clone your forked copy of the project.
 
+```
 git clone --depth 1 https://github.com/<your_user_name>/Ecommerce-Store-using-NextJS.git
-
+```
 
 3. Navigate to the project directory 📁 .
-
+```
 cd Ecommerce-Store-using-NextJS
+```
 4. Add a reference to the original repository.
-
+```
 git remote add upstream https://github.com/Ahsan-Ehtesham/Ecommerce-Store-using-NextJS.git 
+```
 5. Check the remotes for this repository.
-
+```
 git remote -v
+```
 6. Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
-
-git pull upstream master
+```
+git pull upstream main
+```
 Comment on any existing issue(s) raised by project maintainers. Otherwise raise a new issue.
 Guidelines for raising a new issue:
 Each issue should have an appropriate and short title like "Bug in Experience Page"
@@ -51,8 +57,9 @@ Always keep a note of the deadline.
 ## B. Contributing to the Project
 Once the project maintainer(s)/mentor(s) have reviewed the issue/assigned you the issue. Start working on the changes.
 1. Create a new branch (DO NOT name it MAIN or MASTER or anything random).
-
+```
 git checkout -b <your_branch_name>
+```
 2. Perform your desired changes to the code base.
 
 Make sure that you do not change any code unrelated to the task that you have been assigned
@@ -69,15 +76,18 @@ Preview your changes and test them properly before proceeding ahead
 
 Make a small clip or take screenshots before and after making changes.
 3. Track your changes✔️
-
+```
 git add . 
+```
 4. Commit your changes .
-
+```
 git commit -m "Relevant message"  (usually title of the pull request)
+```
 Make sure to condense your changes into a single commit.
 5. Push the committed changes in your feature branch to your remote repo.
-
+```
 git push -u origin <your_branch_name>
+```
 6. To create a pull request, click on compare and pull requests. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 
 
@@ -96,7 +106,7 @@ In case of multiple commits, please perform a rebase and make a squash commit be
 Pull Requests without a description would often not be reviewed. Make sure you describe your intended changes in the description section of the pull request. (Use bullet points and phrases)
 
 Make sure to refer the respective issue in the respective PR using phrases like Resolves #issue_number or Closes #issue_number. Here's an example to raise a PR:
-
+```
  Fixes #640
 
 # Work Done:
@@ -106,7 +116,7 @@ Make sure to refer the respective issue in the respective PR using phrases like 
 - ...
 - ...
 - ...
-
+```
 # Relevant Screenshots/Gifs
 Refrain from using phrases like "Hi, I am ..", "Please merge me this PR", "Thank You..", etc. We are only interested in technical parts.
 
