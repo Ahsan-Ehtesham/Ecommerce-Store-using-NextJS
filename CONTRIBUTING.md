@@ -74,7 +74,7 @@ Preview your changes and test them properly before proceeding ahead
 
 
 
-Make a small clip or take screenshots before and after making changes.
+Make a small clip or take screenshots before and after making changes.<br/>
 3. Track your changes✔️
 ```
 git add . 
