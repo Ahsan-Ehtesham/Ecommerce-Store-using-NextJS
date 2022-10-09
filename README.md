@@ -139,6 +139,7 @@ Pull Requests without a description would often not be reviewed. Make sure you d
 
 Make sure to refer the respective issue in the respective PR using phrases like Resolves #issue_number or Closes #issue_number. Here's an example to raise a PR:
 
+```
  Fixes #640
 
 # Work Done:
@@ -148,6 +149,9 @@ Make sure to refer the respective issue in the respective PR using phrases like 
 - ...
 - ...
 - ...
+
+# Relevant Screenshots/Gifs
+```
 
 # Relevant Screenshots/Gifs
 Refrain from using phrases like "Hi, I am ..", "Please merge me this PR", "Thank You..", etc. We are only interested in technical parts.
