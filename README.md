@@ -1,5 +1,7 @@
 
 # Ecommerce Platform using NEXTJS and TAILWINDCSS
+-------------------------------------------------
+Make sure to leave a star ⭐
 
 
 ![Hactoberfest](https://img.shields.io/badge/Hactoberfest-%E2%9D%A4-red)    
