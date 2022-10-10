@@ -28,8 +28,8 @@ Check out <a href="/CONTRIBUTING.md">Contribution Document</a>
 
 ## Our Contributors
 
-<a href="https://github.com/AhanDcruz/Guess-the-Number/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=AhanDcruz/Guess-the-Number" />
+<a href="https://github.com/Ahsan-Ehtesham/Ecommerce-Store-using-NextJS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ahsan-Ehtesham/Ecommerce-Store-using-NextJS" />
 </a>
 
 <br>
