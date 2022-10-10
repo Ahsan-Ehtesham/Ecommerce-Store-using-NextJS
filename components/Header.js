@@ -23,15 +23,16 @@ const Header = () => {
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg h-full">
-              <div className = "bg-white p-2 mb-2 rounded-lg">  <Image
-                  className="h-40 rounded w-full object-contain object-center mb-6"
-                  src="/tshirt.jpg"
-                  width={720}
-                  height={400}
-                  alt="content"
-                /></div>
-              
-              
+                <div className="bg-white p-2 mb-2 rounded-lg">
+                  <Image
+                    className="h-40 rounded w-full object-contain object-center mb-6"
+                    src="/tshirt.jpg"
+                    width={720}
+                    height={400}
+                    alt="content"
+                  />
+                </div>
+
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
                   T-SHIRTS
                 </h3>
@@ -46,16 +47,16 @@ const Header = () => {
             </div>
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg h-full">
-              <div className = "bg-white p-2 mb-2 rounded-lg">
-                <img
-                  className="h-40 rounded w-full object-contain object-center mb-6"
-                  src="/hoodies.jpg"
-                  width={721}
-                  height={401}
-                  alt="content"
-                />
-              </div>
-              
+                <div className="bg-white p-2 mb-2 rounded-lg">
+                  <Image
+                    className="h-40 rounded w-full object-contain object-center mb-6"
+                    src="/hoodies.jpg"
+                    width={721}
+                    height={401}
+                    alt="content"
+                  />
+                </div>
+
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
                   HOODIES
                 </h3>
@@ -70,17 +71,16 @@ const Header = () => {
             </div>
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg h-full">
-              <div className = "bg-white p-2 mb-2 rounded-lg">
-              
-                <img
-                  className="h-40 rounded w-full object-contain object-center mb-6"
-                  src="/watches.jpg"
-                  width={722}
-                  height={402}
-                  alt="content"
-                />
-              </div>
-              
+                <div className="bg-white p-2 mb-2 rounded-lg">
+                  <Image
+                    className="h-40 rounded w-full object-contain object-center mb-6"
+                    src="/watches.jpg"
+                    width={722}
+                    height={402}
+                    alt="content"
+                  />
+                </div>
+
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
                   WATCHES
                 </h3>
@@ -96,17 +96,16 @@ const Header = () => {
             </div>
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg h-full">
-              <div className = "bg-white p-2 mb-2 rounded-lg">
-              
-                <img
-                  className="h-40 rounded w-full object-contain object-center mb-6"
-                  src="/stickers.jpg"
-                  width={723}
-                  height={403}
-                  alt="content"
-                />
-              </div>
-              
+                <div className="bg-white p-2 mb-2 rounded-lg">
+                  <Image
+                    className="h-40 rounded w-full object-contain object-center mb-6"
+                    src="/stickers.jpg"
+                    width={723}
+                    height={403}
+                    alt="content"
+                  />
+                </div>
+
                 <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
                   STICKERS
                 </h3>
@@ -131,7 +130,8 @@ const Header = () => {
               </h1>
               <p className="mt-4 text-xl text-gray-500">
                 This year, our new summer collection will shelter you from the
-                harsh elements of a world that doesn&apos;t care if you live or die.
+                harsh elements of a world that doesn&apos;t care if you live or
+                die.
               </p>
             </div>
             <div>
