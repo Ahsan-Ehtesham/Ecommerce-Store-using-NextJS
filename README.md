@@ -2,6 +2,7 @@
 
 ---
 
+<br/>
 <table align="center">
     <thead align="center">
         <tr border: 1px;>
@@ -15,7 +16,7 @@
      </thead>
     <tbody>
          <tr>
-            <td><a href="https://github.com/pranjay-poddar/Dev-Geeks"</a>Project</td>
+            <td><a href="https://github.com/Ahsan-Ehtesham/Ecommerce-Store-using-NextJS"</a>Project</td>
             <td><img alt="Stars" src="https://img.shields.io/github/stars/Ahsan-Ehtesham/Ecommerce-Store-using-NextJS?style=flat&logo=github"/></td>
              <td><img alt="Forks" src="https://img.shields.io/github/forks/Ahsan-Ehtesham/Ecommerce-Store-using-NextJS?style=flat&logo=github"/></td>
             <td><img alt="Issues" src="https://img.shields.io/github/issues/Ahsan-Ehtesham/Ecommerce-Store-using-NextJS?style=flat&logo=github"/></td>
