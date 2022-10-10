@@ -34,9 +34,12 @@ Make sure to leave a star ⭐
 
 ![App Screenshot](Screenshot.png)
 
-create .env.local and add following configs
+To start MongoDB Server:
 
-MONGO_URI=mongodb://127.0.0.1:27017/db_name
+```
+start: docker compose up
+stop: docker compose down
+```
 
 ## Tech Stack
 
