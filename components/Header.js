@@ -34,7 +34,7 @@ const Header = () => {
                   T-SHIRTS
                 </h3>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Gildan Men's Ultra Cotton T-Shirt
+                  Gildan Men&apos;s Ultra Cotton T-Shirt
                 </h2>
                 <p className="leading-relaxed text-base">
                   100% cotton, this classic fit preshrunk jersey knit provides
@@ -76,7 +76,7 @@ const Header = () => {
                   WATCHES
                 </h3>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Fossil Men's Quartz Chronograph Watch
+                  Fossil Men&apos;s Quartz Chronograph Watch
                 </h2>
                 <p className="leading-relaxed text-base">
                   Military-inspired design with oversized lugs and bold details
@@ -118,7 +118,7 @@ const Header = () => {
               </h1>
               <p className="mt-4 text-xl text-gray-500">
                 This year, our new summer collection will shelter you from the
-                harsh elements of a world that doesn't care if you live or die.
+                harsh elements of a world that doesn&apos;t care if you live or die.
               </p>
             </div>
             <div>

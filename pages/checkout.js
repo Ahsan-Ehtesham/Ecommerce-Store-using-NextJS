@@ -13,7 +13,7 @@ const Checkout = ({ cart, subTotal }) => {
                 <form>
                   <div className="mb-4">
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="after:content-['*'] after:ml-0.5 after:text-red-500 leading-7 text-sm font-semibold text-gray-600"
                     >
                       Email
@@ -36,7 +36,7 @@ const Checkout = ({ cart, subTotal }) => {
                 <form>
                   <div className=" mb-4">
                     <label
-                      for="cardno"
+                      htmlFor="cardno"
                       className="after:content-['*'] after:ml-0.5 after:text-red-500 leading-7 text-sm text-gray-600"
                     >
                       Card Number
@@ -56,7 +56,7 @@ const Checkout = ({ cart, subTotal }) => {
                     <div className="p-2 w-3/4">
                       <div className="relative">
                         <label
-                          for="expdate"
+                          htmlFor="expdate"
                           className="after:content-['*'] after:ml-0.5 after:text-red-500 leading-7 text-sm text-gray-600"
                         >
                           Expiration Date (MM/YY)
@@ -76,7 +76,7 @@ const Checkout = ({ cart, subTotal }) => {
                     <div className="p-2 w-1/4">
                       <div className="relative">
                         <label
-                          for="cvv"
+                          htmlFor="cvv"
                           className="after:content-['*'] after:ml-0.5 after:text-red-500 leading-7 text-sm text-gray-600"
                         >
                           CVV
@@ -101,7 +101,7 @@ const Checkout = ({ cart, subTotal }) => {
                 <form>
                   <div className=" mb-4">
                     <label
-                      for="address"
+                      htmlFor="address"
                       className="after:content-['*'] after:ml-0.5 after:text-red-500 leading-7 text-sm text-gray-600"
                     >
                       Address
@@ -121,7 +121,7 @@ const Checkout = ({ cart, subTotal }) => {
                     <div className="p-2 w-4/12">
                       <div className="relative">
                         <label
-                          for="city"
+                          htmlFor="city"
                           className="after:content-['*'] after:ml-0.5 after:text-red-500 leading-7 text-sm text-gray-600"
                         >
                           City
@@ -141,7 +141,7 @@ const Checkout = ({ cart, subTotal }) => {
                     <div className="p-2 w-4/12">
                       <div className="relative">
                         <label
-                          for="state"
+                          htmlFor="state"
                           className="after:content-['*'] after:ml-0.5 after:text-red-500 leading-7 text-sm text-gray-600"
                         >
                           State/Province
@@ -161,7 +161,7 @@ const Checkout = ({ cart, subTotal }) => {
                     <div className="p-2 w-4/12">
                       <div className="relative">
                         <label
-                          for="pcode"
+                          htmlFor="pcode"
                           className="after:content-['*'] after:ml-0.5 after:text-red-500 leading-7 text-sm text-gray-600"
                         >
                           Postal Code
