@@ -3,7 +3,7 @@ import Link from "next/link";
 import mongoose from "mongoose";
 import Product from "../models/Product";
 
-const Stickers = () => {
+const Stickers = ({products}) => {
   return (
     <div>
       <section className="text-gray-600 body-font">
