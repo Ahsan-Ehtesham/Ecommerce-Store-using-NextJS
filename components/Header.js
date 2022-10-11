@@ -4,7 +4,10 @@ import Image from "next/image";
 const Header = () => {
   return (
     <div>
-      <img src="/Header_img.jpg" />
+      <div className="md:w-100 sm:w-100">
+        <img className="md-w-100 sm:w-100" src="/Header_img.jpg" />
+      </div>
+
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-wrap w-full mb-20">
