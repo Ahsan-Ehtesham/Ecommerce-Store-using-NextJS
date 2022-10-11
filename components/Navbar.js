@@ -10,15 +10,18 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
   const toggleCart = () => {
     if (ref.current.classList.contains("translate-x-full")) {
       ref.current.classList.remove("translate-x-full");
+      ref.current.classList.remove("hidden");
       ref.current.classList.add("translate-x-0");
+      
     } else if (!ref.current.classList.contains("translate-x-full")) {
       ref.current.classList.remove("translate-x-0");
       ref.current.classList.add("translate-x-full");
+      ref.current.classList.add("hidden");
     }
   };
   const ref = useRef();
   return (
-    <div className="sticky top-0 z-10 bg-white">
+    <div className="sticky top-0 z-10 bg-white ">
       <header className="text-gray-600 body-font shadow-lg shadow-gray-600/50">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link href={"/"}>
@@ -58,7 +61,7 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
       </header>
       <div
         ref={ref}
-        className={`w-full sm:w-1/3 md:w-2/3 lg:w-2/3 xl:w-1/3 sideCart absolute top-0 right-0 bg-indigo-100 px-2 py-10 transform transition-transform ${
+        className={`hidden w-full sm:w-1/3 md:w-2/3 lg:w-2/3 xl:w-1/3 sideCart absolute top-0 right-0 bg-indigo-100 px-2 py-10 transform transition-transform ${
           Object.keys(cart).length === 0 ? "translate-x-full" : "translate-x-0"
         }`}
       >
