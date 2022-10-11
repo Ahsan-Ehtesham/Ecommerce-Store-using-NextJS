@@ -9,9 +9,9 @@ const Signup = () => {
   }
 
   const handleFormSubmit = e => {
-    // todo: need to update to API endpoint to handle POST request
-    fetch('/api/***API TO HANDLE*** login', {
-      method: POST,
+    e.preventDefault()
+    fetch('/api/usersignup', {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -21,8 +21,6 @@ const Signup = () => {
       .then(data => console.log(data))
       .catch(err => console.error(err))
   }
-
-  console.log(form)
 
   return (
     <>
