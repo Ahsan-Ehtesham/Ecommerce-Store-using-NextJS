@@ -25,7 +25,7 @@ const Tshirts = ({ products }) => {
                   </Link>
                   <div className="mt-4">
                     <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      {item.category}
+                      {item.category.toUpperCase()}
                     </h3>
                     <h2 className="text-gray-900 title-font text-lg font-medium">
                       {item.title}
@@ -46,7 +46,7 @@ export async function getServerSideProps(context) {
   if (!mongoose.connections[0].readyState) {
     await mongoose.connect(process.env.MONGO_URI);
   }
-  let products = await Product.find({category: 'tshirts'});
+  let products = await Product.find({category: 't-shirts'});
   return {
     props: { products: JSON.parse(JSON.stringify(products)) }, // will be passed to the page component as props
   };

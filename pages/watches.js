@@ -13,7 +13,7 @@ const Watches = ({ products }) => {
             {products.map((item) => {
               return (
                 <div className="lg:w-1/4 md:w-1/2 p-4 w-full" key={item._id}>
-                  <Link href={"/products/tshirts"}>
+                  <Link href={"/products/watches"}>
                     <a className="block relative h-48 rounded overflow-hidden">
                       <Image
                         alt="ecommerce"
@@ -25,7 +25,7 @@ const Watches = ({ products }) => {
                   </Link>
                   <div className="mt-4">
                     <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      {item.category}
+                      {item.category.toUpperCase()}
                     </h3>
                     <h2 className="text-gray-900 title-font text-lg font-medium">
                       {item.title}
