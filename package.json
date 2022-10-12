@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "node --trace-warnings  scripts/fillDbDummyData.mjs"
   },
   "dependencies": {
+    "axios": "^1.1.2",
     "bcrypt": "^5.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.0",
