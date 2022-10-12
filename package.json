@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\""
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",
+    "seed": "node --trace-warnings  scripts/fillDbDummyData.mjs"
   },
   "dependencies": {
+    "axios": "^1.1.2",
     "bcrypt": "^5.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.0",
