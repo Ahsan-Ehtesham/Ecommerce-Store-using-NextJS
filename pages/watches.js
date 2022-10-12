@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import mongoose from "mongoose";
-import Image from "next/image";
-import Product from "../models/Product";
+import React from 'react';
+import Link from 'next/link';
+import mongoose from 'mongoose';
+import Image from 'next/image';
+import Product from '../models/Product';
 
 const Watches = ({ products }) => {
   return (
@@ -13,7 +13,7 @@ const Watches = ({ products }) => {
             {products.map((item) => {
               return (
                 <div className="lg:w-1/4 md:w-1/2 p-4 w-full" key={item._id}>
-                  <Link href={"/products/watches"}>
+                  <Link href={`/products/${item.slug}`}>
                     <a className="block relative h-48 rounded overflow-hidden">
                       <Image
                         alt="ecommerce"
@@ -46,7 +46,7 @@ export async function getServerSideProps(context) {
   if (!mongoose.connections[0].readyState) {
     await mongoose.connect(process.env.MONGO_URI);
   }
-  let products = await Product.find({category: 'watches'});
+  let products = await Product.find({ category: 'watches' });
   return {
     props: { products: JSON.parse(JSON.stringify(products)) }, // will be passed to the page component as props
   };
