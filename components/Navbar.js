@@ -31,17 +31,26 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
             </a>
           </Link>
           <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center space-x-5">
-            <Link href={"/tshirts"} className="mr-5 hover:text-gray-900">
-              T-Shirts
+            
+            <Link href={"/tshirts"} className="mr-5">
+              <a className="hover:text-gray-900">
+                T-Shirts
+              </a>
             </Link>
-            <Link href={"/hoodies"} className="mr-5 hover:text-gray-900">
-              Hoodies
+            <Link href={"/hoodies"} className="mr-5">
+              <a className="hover:text-gray-900">
+                Hoodies
+              </a>
             </Link>
-            <Link href={"/watches"} className="mr-5 hover:text-gray-900">
-              Watches
+            <Link href={"/watches"} className="mr-5">
+              <a className="hover:text-gray-900">
+                Watches
+              </a>
             </Link>
-            <Link href={"/stickers"} className="mr-5 hover:text-gray-900">
-              Stickers
+            <Link href={"/stickers"} className="mr-5">
+              <a className="hover:text-gray-900">
+                Stickers
+              </a>
             </Link>
           </nav>
           <div className="flex items-center">
