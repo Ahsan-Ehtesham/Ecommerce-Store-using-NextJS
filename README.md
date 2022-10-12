@@ -39,6 +39,7 @@ To start MongoDB Server:
 ```
 start: docker compose up
 stop: docker compose down
+seed database: yarn seed
 ```
 
 ## Tech Stack
