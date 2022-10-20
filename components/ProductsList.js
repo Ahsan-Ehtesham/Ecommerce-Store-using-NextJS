@@ -16,15 +16,12 @@ const ProductCard = ({ item }) => {
         </div>
 
         <h3 className="title-font text-xs font-medium tracking-widest text-indigo-500">
-          HOODIES
+          {item.slug}
         </h3>
         <h2 className="title-font mb-4 text-lg font-medium text-gray-900">
-          Gildan Adult Fleece Hoodie
+          {item.title}
         </h2>
-        <p className="text-base leading-relaxed">
-          Equal parts durable, comfortable and stylish, the Gildan Adult Fleece
-          Hooded Sweatshirt belongs in every collection.
-        </p>
+        <p className="text-base leading-relaxed">{item.description}</p>
       </div>
     </div>
   );
@@ -59,29 +56,6 @@ export default function ProductList() {
           {allProducts?.map((item) => {
             return <ProductCard key={item.id} item={item} />;
           })}
-          <div className="p-4 md:w-1/2 xl:w-1/4">
-            <div className="h-full rounded-lg bg-gray-100 p-6">
-              <div className="mb-2 rounded-lg bg-white p-2">
-                <Image
-                  className="mb-6 h-40 w-full rounded object-contain object-center"
-                  src="/stickers.jpg"
-                  width={723}
-                  height={403}
-                  alt="content"
-                />
-              </div>
-
-              <h3 className="title-font text-xs font-medium tracking-widest text-indigo-500">
-                STICKERS
-              </h3>
-              <h2 className="title-font mb-4 text-lg font-medium text-gray-900">
-                Goku and Vegeta Sticker
-              </h2>
-              <p className="text-base leading-relaxed">
-                High quality decal die-cut laptop sticker in black color.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
