@@ -1,4 +1,4 @@
-# Ecommerce Platform using NEXTJS and TAILWINDCSS
+# Ecommerce Platform using NEXTJS and TAILWINDCSS.
 
 ---
 
