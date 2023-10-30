@@ -9,3 +9,17 @@ body{
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5F69F2; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
